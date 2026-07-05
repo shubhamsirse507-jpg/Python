@@ -1,12 +1,11 @@
-﻿var ptr=""
+﻿ptr = ""
 
-for(i=1;i<=7;i++){
-    for(j=1;j<=5;j++){
-        if(i==1||i==4||i==7||(j==1&&i<=4)||(j==5&&i>=4))
-            ptr+="*"
-        else
-            ptr+=" "
-    }
+for i in range(1, 8):
+    for j in range(1, 6):
+        if i == 1 or i == 4 or i == 7 or (j == 1 and i <= 4) or (j == 5 and i >= 4):
+            ptr += "*"
+        else:
+            ptr += " "
+    ptr += "\n"
 
-    ptr+="\n"
-}
+print(ptr)
